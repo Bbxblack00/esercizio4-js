@@ -14,13 +14,13 @@
 
 
 
-    <!-- <h1 class="til" id="risultato"></h1> -->
+    <h1 class="til" id="risultato"></h1>
 
 
-    <h1 class="til" id="risultatouno"></h1>
-    <h1 class="til" id="risultatodue"></h1>
+    <!-- <h1 class="til" id="risultatouno"></h1>
+    <h1 class="til" id="risultatodue"></h1> -->
 
-    
+
   </body>
   <script type="text/javascript">
 
@@ -37,25 +37,36 @@
 
 
     // lunghezza delle stringhe
-    var fString = prompt('inserici una parola :');
-    var sString = prompt("insericine un'altra :")
-    var fLng = fString.length;
-    var sLng = sString.length;
+    // var fString = prompt('inserici una parola :');
+    // var sString = prompt("insericine un'altra :")
+    // var fLng = fString.length;
+    // var sLng = sString.length;
+    //
+    //
+    // if (fLng > sLng) {
+    //
+    //   document.getElementById('risultatouno').innerHTML = sString;
+    //
+    //   document.getElementById('risultatodue').innerHTML = fString;
+    //
+    // }else {
+    //
+    //   document.getElementById('risultatouno').innerHTML = fString;
+    //
+    //   document.getElementById('risultatodue').innerHTML = sString;
+    //
+    // }
 
 
-    if (fLng > sLng) {
+    // somma dei 5 numeri inseriti
+    var summ = 0;
+    for (var i = 0; i < 5; i++) {
+      var num = prompt('inserisci un numero : ');
 
-      document.getElementById('risultatouno').innerHTML = sString;
-
-      document.getElementById('risultatodue').innerHTML = fString;
-
-    }else {
-
-      document.getElementById('risultatouno').innerHTML = fString;
-
-      document.getElementById('risultatodue').innerHTML = sString;
-
+      summ = summ + parseInt(num);
     }
+
+    document.getElementById('risultato').innerHTML = summ;
 
   </script>
 </html>
