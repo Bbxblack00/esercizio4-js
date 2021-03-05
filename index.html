@@ -59,14 +59,31 @@
 
 
     // somma dei 5 numeri inseriti
-    var summ = 0;
-    for (var i = 0; i < 5; i++) {
-      var num = prompt('inserisci un numero : ');
+    // var summ = 0;
+    // for (var i = 0; i < 5; i++) {
+    //   var num = prompt('inserisci un numero : ');
+    //   // metodo esteso
+    //   // summ = summ + parseInt(num);
+    //
+    //   // operazione contratta
+    //   sum += parseInt(num);
+    // }
+    //
+    // document.getElementById('risultato').innerHTML = summ;
 
-      summ = summ + parseInt(num);
+
+
+    // creare un array ed inserirci valori manuali da prompt
+    var arr = [];
+
+    for (var i = 0; i < 6; i++) {
+      var manualNumber = parseInt(prompt('inserisci un numero: '));
+      if (manualNumber % 2 == 1) {
+        arr.push(manualNumber);
+      }
     }
 
-    document.getElementById('risultato').innerHTML = summ;
+    console.log(arr);
 
   </script>
 </html>
