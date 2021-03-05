@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mail e Sorte</title>
+    <style media="screen">
+      .til{
+        text-align: center;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <!-- <h1 class="til" id="risultato"></h1> -->
+
+
+    <h1 class="til" id="risultatouno"></h1>
+    <h1 class="til" id="risultatodue"></h1>
+
+    
+  </body>
+  <script type="text/javascript">
+
+
+    // numero più grande o corto
+    // var fNumber = prompt('inserisci un numero : ');
+    // var sNumber = prompt('inserisci un altro numero : ');
+    //
+    // if (fNumber > sNumber) {
+    //   document.getElementById('risultato').innerHTML = 'Il numero maggiore è : ' + fNumber;
+    // } else {
+    //   document.getElementById('risultato').innerHTML = 'Il numero maggiore è : ' + sNumber;
+    // }
+
+
+    // lunghezza delle stringhe
+    var fString = prompt('inserici una parola :');
+    var sString = prompt("insericine un'altra :")
+    var fLng = fString.length;
+    var sLng = sString.length;
+
+
+    if (fLng > sLng) {
+
+      document.getElementById('risultatouno').innerHTML = sString;
+
+      document.getElementById('risultatodue').innerHTML = fString;
+
+    }else {
+
+      document.getElementById('risultatouno').innerHTML = fString;
+
+      document.getElementById('risultatodue').innerHTML = sString;
+
+    }
+
+  </script>
+</html>
